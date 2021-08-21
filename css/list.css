@@ -230,7 +230,7 @@
     width: 52px;
     height: 52px;
     font-size: 43px;
-    color: #fff;
+    color: black;
     line-height: 52px;
     text-decoration: none;
     top: 200px;
@@ -541,9 +541,6 @@
   }
   .material-card.Green .mc-footer h4 {
     color: #1b5e20;
-  }
-  .material-card.Green .mc-footer a {
-    background-color: #1b5e20;
   }
   .material-card.Green.mc-active .mc-content {
     background-color: #e8f5e9;
