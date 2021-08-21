@@ -1,0 +1,136 @@
+#sc-id
+{
+    height: 500px;
+}
+.sc
+{
+    height: 85%;
+}
+.sc-item
+{
+    height: 360px;
+    width:440px;
+    background-color: #E6E6E1;
+    border-radius: 2%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sc-head
+{
+    height:fit-content;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(34, 101, 62);
+}
+.sc-img
+{
+    width: 100%;
+    height:190px;
+    display: flex;
+    justify-content: center;
+}
+.sc-border
+{
+    height: 190px;
+    width: 190px;
+    overflow: hidden;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.sc-img img
+{
+    height: 190px;
+    width: 190px;
+    vertical-align: middle;
+}
+.sc-desc
+{
+    width: 100%;
+    height: 27%;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+.slick-slide > div
+{
+    transform: scale(.9);
+    transition: transform .3s cubic-bezier(.4,0,.2,1);
+}
+.slick-center > div
+{
+    transform: scale(1);
+}
+.slick-next:before, .slick-prev:before
+{
+    position: relative;
+    color: #696969;
+    font-size: 30px;
+    right: 5px;
+    bottom: 5px;
+}
+/* .slick-center .sc-item
+{
+    background-color: rgb(230, 104, 104);
+} */
+@media (max-width:1420px)
+{
+    .sc-item
+    {
+        height: 395px;
+        width:395px;
+    }
+}
+@media (max-width:1350px)
+{
+    .sc-item
+    {
+        height: 410px;
+        width: 480px;
+    }
+}
+@media (max-width:1240px)
+{
+    .sc-item
+    {
+        height: 380px;
+        width:430px;
+    }
+}
+@media (max-width:870px)
+{
+    .sc-item
+    {
+        height: 380px;
+        width:375px;
+        justify-content: flex-start;
+    }
+}
+@media (max-width:760px)
+{
+    .sc-item
+    {
+        height: 370px;
+        width:440px;
+    }
+}
+@media (max-width:460px)
+{
+    #sc-id
+    {
+        width: 100vw;
+        padding: 0px;
+    }
+    .sc-item
+    {
+        height: 390px;
+        width:345px;
+    }
+    .slick-dots li
+    {
+        margin: 0px;
+    }
+}

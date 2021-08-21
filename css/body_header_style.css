@@ -1,0 +1,258 @@
+body
+{
+    position: relative;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'DM Sans', sans-serif;
+	margin: 0px;
+    padding: 0px;
+	background-color: white;
+    height: 100vh;
+    z-index: -2;
+}
+
+p
+{
+    margin: 0px;
+    height: inherit;
+}
+
+button
+{
+    border: 0px;
+    font-family: inherit;
+    font-style: inherit;
+    background-color: inherit;
+    color: inherit;
+}
+
+button:focus
+{
+    border: none;
+    outline: none;
+}
+
+a 
+{
+	text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+	color: inherit;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+a:hover
+{
+    cursor: pointer;
+	text-decoration: underline;
+}
+
+.top
+{
+    position: fixed;
+    height: 12vh;
+    width: 100vw;
+    margin: 0px auto;
+    padding-right: 10px;
+    padding-left: 10px; 
+    background-color: #E6E6E1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#bars
+{
+    display: none;
+}
+
+.top #logo
+{
+    position: relative;
+    height: 100%;
+    width: 13vw;
+}
+
+#logo img
+{
+    width:100%;
+    height: 100%;
+}
+
+.header-list
+{
+    margin: 0px;
+    position: relative;
+    width: 80%;
+    height: 100%;
+    left: 3em;
+
+}
+
+.header-list ul
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    justify-content: space-evenly;
+}
+
+.header-list ul li
+{
+    margin: 0px;
+    padding: 0px;
+    height: fit-content;
+    position: relative;
+    text-align: center;
+    top: 4vh;
+    font-size: 20px;
+}
+
+.btn
+{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    font-size: inherit;
+}
+
+.addtoggle
+{
+    display: block;
+    position: absolute;
+    will-change: transform;
+    top: 0px;
+    left: 0px;
+    transform: translate3d(-181px, 26px, 0px);
+}
+
+.btn-group
+{
+    width: 80%;
+}
+
+#main
+{
+    position: relative;
+    background-color: white;
+    top: 12vh;
+    height: 88vh;
+    width: 100%;
+    overflow: scroll;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    z-index: -1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+main::-webkit-scrollbar-track
+{
+    box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+main::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+main::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #22653E;
+}
+
+@media (max-width: 1140px)
+{
+    .header-list a
+    {
+        font-size: 18px;
+    }
+
+    #logo img
+    {
+        width: 142px;
+        height: 82px;
+    }
+}
+
+@media (max-width: 960px)
+{
+    .top
+    {
+        justify-content: flex-start;
+    }
+
+    .header-list a
+    {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 850px)
+{
+    .header-list
+    {
+        display: none;
+    }
+    #bars
+    {
+        display: block;
+    }
+    .top #logo
+    {
+        width: 100%;
+    }
+    #bars>.dropdown-menu
+    {
+        min-width: 0;
+        width: 195px;
+    }
+}
+@media (max-width: 650px)
+{
+    .dropdown-menu.d-left
+    {
+        min-width: 0;
+        width: 250px;
+        height: 670px;
+        overflow: scroll;
+    }
+    .d-left .dropdown-item
+    {
+        white-space: normal;
+    }
+}
+@media (max-width: 440px)
+{
+    #bars>.dropdown-menu
+    {
+        min-width: 0;
+        width: 160px;
+        left: 35px;
+    }
+    #bars>.dropdown-menu>.dropdown-item
+    {
+        white-space: normal;
+    }
+    .dropdown-menu.d-left
+    {
+        width: 220px;
+    }
+}
