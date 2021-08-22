@@ -28,7 +28,6 @@ $(document).ready(function()
     $('#bars').children("button").clickToggle(function ()
     {
         $(this).parent().children(".dropdown-menu").addClass("addtoggle");
-        console.log("click");
     },function ()
     {
         $(this).parent().children(".dropdown-menu").removeClass("addtoggle");
