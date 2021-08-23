@@ -410,13 +410,13 @@
                     <img src="media/contact1.svg" alt="contact">
                   </div>
                   <div class="col-xs-12 col-lg-6">
-                    <form id="contact_form">
+                    <form id="contact_form" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeiafHdwZD1Jpn3Xp2TddNkFu0kcNxDceuqta9n1r2myGlGBg/formResponse" target="g-form">
                       <div id="contact_col">
-                        <input type="text" id="name" class="contact-field" placeholder="Name" required>
-                        <input type="email" id="email" class="contact-field" placeholder="Email Address" required>
+                        <input type="text" id="name" class="contact-field" placeholder="Name" name="entry.1587300479" required>
+                        <input type="email" id="email" class="contact-field" placeholder="Email Address" name="entry.834589316" required>
                       </div>
-                      <input type="text" id="subject" class="contact-field" placeholder="Subject" required>
-                      <textarea id="textarea" class="contact-field" placeholder="Message" required></textarea>
+                      <input type="text" id="subject" class="contact-field" placeholder="Subject" name="entry.1763444622" required>
+                      <textarea id="textarea" class="contact-field" placeholder="Message" name="entry.997289967" required></textarea>
                       <div id="contact_btn">
                         <button type="submit" id="contact-btn" onclick="validate()">
                           Send Message
@@ -515,7 +515,9 @@
             </div>
         </footer>
     </main>
-
+    <div id="f-target">
+        <iframe name="g-form" frameborder="0"></iframe>
+    </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"

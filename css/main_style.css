@@ -246,6 +246,11 @@
     margin-right: 50px;
 }
 
+#f-target
+{
+    display: none;
+}
+
 @media(max-width:1330px)
 {
     .about>div img
