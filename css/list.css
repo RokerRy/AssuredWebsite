@@ -37,14 +37,15 @@
 
   #l_head
   {
-      background-color: #de6f74;
+      /* background-color: #de6f74; */
       border-radius: 25px;
       height:fit-content;
-      width: 360px;
+      /* width: 360px; */
       font-size: 35px;
       padding: 10px;
       margin-top: 20px;
       margin-bottom: 20px;
+      text-decoration: underline #22653E;
   }
 
   #card_container
