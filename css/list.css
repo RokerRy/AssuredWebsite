@@ -47,6 +47,13 @@
       margin-bottom: 20px;
       text-decoration: underline #22653E;
   }
+  @media (max-width: 420px)
+  {
+    #l_head
+    {
+      font-size: 26px;
+    }
+  }
 
   #card_container
   {
